@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>DecHex_Converter</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>dechex_converter.ico</ApplicationIcon>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Company>Teknix</Company>
+    <Authors>Kim Eirik Kvassheim</Authors>
+    <Description>Simple utility to convert hexadecimal - decimal in realtime</Description>
+    <Copyright>Teknix 2020</Copyright>
+    <PackageProjectUrl>teknix.no</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.3" />
+    <PackageReference Include="System.Console" Version="4.3.1" />
+  </ItemGroup>
+
+</Project>
