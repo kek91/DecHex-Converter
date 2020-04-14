@@ -41,35 +41,6 @@ namespace DecHex_Converter
             }
         }
 
-        public void UpdateSettings()
-        {
-            Debug.WriteLine("UpdateSettings()...");
-            var appSettings = ConfigurationManager.AppSettings;
-            if (appSettings["AlwaysOnTop"] == "true")
-            {
-                this.Activate();
-                this.Topmost = true;  // important
-                this.Topmost = false; // important
-                this.Focus();         // important
-                Debug.WriteLine("Set Topmost to true.");
-            }
-            else
-            {
-                this.Topmost = false;
-                Debug.WriteLine("Set Topmost to false.");
-            }
-            Debug.WriteLine("Fuck it... just restart app");
-
-            
-
-        }
-
-        /*
-         * private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            SettingWindow.Owner = this;
-        }
-        */
 
         private void TextBox_Dec_KeyUp(object sender, KeyEventArgs e)
         {
